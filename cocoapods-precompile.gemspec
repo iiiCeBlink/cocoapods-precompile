@@ -5,7 +5,7 @@ require 'cocoapods-binary/gem_version.rb'
 
 Gem::Specification.new do |spec|
   spec.name          = 'cocoapods-precompile'
-  spec.version       = CocoapodsBinary::VERSION
+  spec.version       = CocoapodsPrecompile::VERSION
   spec.authors       = ['iiiCeBlink']
   spec.email         = ['zakariyyasv@gmail.com']
   spec.description   = %q{integrate pods in form of prebuilt frameworks conveniently, reducing compile time}
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_dependency "cocoapods", ">= 1.5.0", "< 2.0"
+  spec.add_dependency "cocoapods", ">= 1.4.0", "< 2.0"
   spec.add_dependency "fourflusher", "~> 2.0"
 
   spec.add_development_dependency 'bundler', '~> 1.3'
